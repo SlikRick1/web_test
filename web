@@ -1,84 +1,15 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title>Testing</title>
-
-  <style>
-    #Blue {
-      background-color: rgb(31, 31, 202);
-      height: auto;
-      position: static;
-      top: 0;
-      left: 0;
-      width: 100%;
-    }
-
-    #Red {
-      background-color: rgb(15, 110, 58);
-      height: auto;
-      position: static;
-      top: 0;
-      left: 0;
-      width: 100%;
-    }
-
-    #Footer {
-      position: fixed;
-      padding: 1em;
-      bottom: 0;
-      width: 100%;
-      /* Height of the footer*/
-      height: auto;
-      font-size: 2em;
-      line-height: 50%;
-    }
-
-    body {
-      background-color: black;
-      color: white;
-      font-family: Arial, sans-serif;
-    }
-  </style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <!-- <meta http-equiv="refresh" content="5">     -->
+    <title>Document</title>
 </head>
-
 <body>
-  <center>
-
-    <h1 style="font-size: 3.5em; line-height: 100%;">
-      <u>
-        <b>
-          Information & Technology Building
-        </b>
-      </u>
-    </h1>
-
-    <section id="Blue">
-      <h1 style="font-size:4em; ">
-        Open Blue Spaces:
-      </h1>
-    </section>
-
-    <section id="Red">
-      <h1 style="font-size:4em; ">
-        Open Guest Spaces:
-      </h1>
-    </section>
-
-    <div id="Footer">
-      <a href="https://www.murraystate.edu/about/Offices/police/ParkingServices/" target="_blank"
-        style="color: white">Murray State Parking Website</a>
-      <p>
-        Parking Vision System
-      </p>
-      <p>
-        Boaz and Dave
-      </p>
-    </div>
-
-  </center>
-
+    
+    <h1 style="text-align: center">Counter</h1>
+    <script src="script.js"></script>
 </body>
-
 </html>
