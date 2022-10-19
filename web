@@ -1,58 +1,84 @@
-import threading
-from github import Github
+<!DOCTYPE html>
+<html>
 
-pain = 0
+<head>
+  <title>Testing</title>
 
-def printit():
-  threading.Timer(30, printit).start()
-  global pain
-  pain = pain + 1
+  <style>
+    #Blue {
+      background-color: rgb(31, 31, 202);
+      height: auto;
+      position: static;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
 
-  g = Github("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")
-  repo = g.get_repo("msubb/parking")
-  contents = repo.get_contents("index.html", )
-  repo.update_file(contents.path, "test 1", """<!DOCTYPE html>
-  <html>
-    <head>
-      <title>Testing</title>
-      <style>
-      #Blue {
-        background-color: rgb(31, 31, 202);
-  	  color: white;
-        height: auto;
-        position: static;
-        top: 0;
-        left: 0;
-        width: 100%;
-      }
-  	#Red {
-        background-color: rgb(202, 31, 31);
-  	  color: white;
-        height: auto;
-        position: static;
-        top: 0;
-        left: 0;
-        width: 100%;
-      }
-      body{
-        background: grey;
-        margin: 0;
-      }
-      </style>
-    </head>
-    <body>
-  <section id="Blue">
-  	<h1 style="font-size:4em; ">
-  		<center>""" + str(pain) + """</center>
-  	</h1>
-  </section>
-  <section id="Red">
-  	<center>Testingss</center>
-  </section>
-    </body>
-  </html>""", contents.sha)
+    #Red {
+      background-color: rgb(15, 110, 58);
+      height: auto;
+      position: static;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
 
-  print(pain)
+    #Footer {
+      position: fixed;
+      padding: 1em;
+      bottom: 0;
+      width: 100%;
+      /* Height of the footer*/
+      height: auto;
+      font-size: 2em;
+      line-height: 50%;
+    }
 
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+  </style>
 
-printit()
+</head>
+
+<body>
+  <center>
+
+    <h1 style="font-size: 3.5em; line-height: 100%;">
+      <u>
+        <b>
+          Information & Technology Building
+        </b>
+      </u>
+    </h1>
+
+    <section id="Blue">
+      <h1 style="font-size:4em; ">
+        Open Blue Spaces:
+      </h1>
+    </section>
+
+    <section id="Red">
+      <h1 style="font-size:4em; ">
+        Open Guest Spaces:
+      </h1>
+    </section>
+
+    <div id="Footer">
+      <a href="https://www.murraystate.edu/about/Offices/police/ParkingServices/" target="_blank"
+        style="color: white">Murray State Parking Website</a>
+      <p>
+        Parking Vision System
+      </p>
+      <p>
+        Boaz and Dave
+      </p>
+    </div>
+
+  </center>
+
+</body>
+
+</html>
